@@ -1,0 +1,61 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    /* background-image: linear-gradient(to bottom, rgb(11, 33, 42), rgb(19, 53, 68), rgb(38, 74, 89)); */
+    background-color: rgb(16, 81, 104);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    /* font-family: 'Courier',Courier New,Lucida Sans Typewriter,Lucida Typewriter,monospace; */
+
+}
+
+.mainContainer{
+    margin: 40px;
+    background-image: linear-gradient(to bottom, rgb(118, 74, 118), rgb(52, 22, 42));
+    box-shadow: 0 3px 10px rgb(0 0 0 / 1);
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    min-width: 400px;
+    width: 800px;
+}
+
+.imgDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+}
+
+.message{
+    /* text-align: center; */
+    background-color: rgb(159, 95, 159, .5);
+    border-radius: 12px;
+    padding: 18px;
+}
+
+p{
+    font-family: 'Press Start 2P', cursive;
+    font-size: .5rem;
+    text-align: center;
+    margin: 5px;
+    color: rgb(191, 255, 255);
+}
+
+.formDiv{
+    /* margin-top: 8px; */
+    background-color: rgb(159, 95, 159, .5);
+    border-radius: 12px;
+    padding: 18px;
+
+}
