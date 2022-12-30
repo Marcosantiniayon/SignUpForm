@@ -14,7 +14,10 @@ body{
 }
 
 .mainContainer{
-    margin: 40px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
     background-image: linear-gradient(to bottom, rgb(118, 74, 118), rgb(52, 22, 42));
     box-shadow: 0 3px 10px rgb(0 0 0 / 1);
     padding: 12px;
@@ -22,10 +25,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
     min-width: 445px;
-    width: 800px;
-    min-height: 1000px;
+    width: 600px;
+    /* min-height: 1000px; */
 }
 
 .imgDiv{
@@ -44,8 +47,9 @@ img{
     background-color: rgb(159, 95, 159, .5);
     border-radius: 12px;
     padding: 18px;
-    min-width: 415px;
-    max-width: 480px;
+    /* min-width: 415px;
+    max-width: 480px; */
+    width: 92%;
 }
 
 p{
@@ -61,13 +65,16 @@ p{
     background-color: rgb(159, 95, 159, .5);
     border-radius: 12px;
     padding: 18px;
-    min-width: 415px;
-    max-width: 480px;
+    /* min-width: 415px;
+    max-width: 480px; */
+    width: 92%;
     height: 100%;
     display: flex;
+    justify-content: center;
 
     /* text-align: center; */
 }
+
 .emailDiv, .passDiv, .confDiv, .charDiv {
     display: flex;
     flex-direction: row;
@@ -87,26 +94,14 @@ input{
     text-align: center;
 }
 
-.radioLblDiv{
-    /* margin-top: 20px; */
-    /* display:block; */
-    width: 100%;
-    text-align: center;
-    justify-self: center;
+.radioLblDiv, .radioDiv, .btnDiv{
+    text-align: center; 
 }
-
-.radioDiv{
-    text-align: center;
-}
-
 
 #hero, #villain, #civilian{
     width: 40px;
 }
 
-.btnDiv{
-    text-align: center; 
-}
 #submitBtn{
     border-radius: 8px;
     padding: 10px;
