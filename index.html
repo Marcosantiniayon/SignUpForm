@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@600&family=Press+Start+2P&family=Roboto+Mono:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet"><body>
     <container class="mainContainer">
-        <div class="imgDiv">
-            <img src="images/mainImg.gif" alt="">
+        <div class="mainImgDiv">
+            <img id="mainImg" src="images/mainImg.gif" alt="">
         </div>
         <div class="message">
             <p>ENTER THE </p> 
@@ -45,10 +45,18 @@
                 </div>
                 <br>
                 <div class="radioDiv">
-                    <input type="radio" id="hero" name="characterType" value="Hero">
-                    <input type="radio" id="villain" name="characterType" value="Villain">
-                    <input type="radio" id="civilian" name="characterType" value="Civilian">
-                </div>
+                    <label id="hero">
+                        <input type="radio" id="heroRdio" name="characterType" value="Hero">
+                        <img id="heroImg" src="images/superhero.png" alt="hero">
+                    </label>
+                    <label id="villain">
+                        <input type="radio" id="villainRdio" name="characterType" value="Villain">
+                        <img id= "villainImg" src="images/villain.png" alt="vilain">                    </label>    
+                    <label id="civilian">    
+                        <input type="radio" id="civilianRdio" name="characterType" value="Civilian">
+                        <img id="civilianImg" src="images/employee.png" alt="ciilian">                    </label>    
+                    </label>
+                    </div>
                 <br>
                 <div class="btnDiv">
                     <button id="submitBtn" type="submit">Submit</button>
