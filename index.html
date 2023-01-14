@@ -7,7 +7,9 @@
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@600&family=Press+Start+2P&family=Roboto+Mono:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet"><body>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@600&family=Press+Start+2P&family=Roboto+Mono:wght@200;600&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <body>
     <container class="mainContainer">
         <div class="mainImgDiv">
             <img id="mainImg" src="images/mainImg.gif" alt="">
@@ -20,42 +22,47 @@
         <div class="formDiv">
             <form>
                 <div class="emailDiv">
-                    <label id="eAddLbl" for="emailAddress">Email Address: * </label>
-                    <input type="text" id="eAddInput" placeholder="Email Address">
+                    <label id="eAddLbl" for="eAddInput">Email Address* </label>
+                    <div><input type="email" id="eAddInput" placeholder="Email Address" required>
+                    <div id="emailAddressError" class="error"> Please enter in a valid Email. EX:(johnSmith@email.com) </div></div>
+                    
                 </div>
                 <br>
                 <div class="passDiv">
-                    <label for="password">Password: * </label>
-                    <input type="text" id="password" placeholder="Password">
+                    <label for="password">Password* </label>
+                    <div><input type="text" id="password" placeholder="Password" required>
+                    <div id="passwordError" class="error"> Missing at least 1 capital letter. Missing at least 1 number. Password must be at least 8 characters.</div></div>
                 </div>    
                 <br>
                 <div class="confDiv">
-                    <label for="confirmPassword">Confirm Password: * </label>
-                    <input type="text" id="confirmPassword" placeholder="Confirm Password">
+                    <label for="confirmPassword">Confirm Password* </label>
+                    <div><input type="text" id="confirmPassword" placeholder="Confirm Password" required>
+                    <div id="confirmPasswordError" class="error"> Passwords do not match
+                    </div></div>
                 </div>  
                 <br>
                 <div class="charDiv">
-                    <label for="characterName">Character Name: * </label>
-                    <input type="text" id="characterName" placeholder="Character Name">
+                    <label for="characterName">Character Name* </label>
+                    <div><input type="text" id="characterName" placeholder="Character Name" required></div>
                 </div>
                 <br>
                 <br>
                 <div class="radioLblDiv">
-                    <label id="radioLabel" for="characterType">Character Type: * </label>
+                    <label id="radioLabel">Character Type* </label>
                 </div>
                 <br>
                 <div class="radioDiv">
+                    <label id="civilian">    
+                        <input type="radio" id="civilianRdio" name="characterType" value="Civilian" checked>
+                        <img id="civilianImg" src="images/employee.png" alt="ciilian"></label>    
+                    </label>
                     <label id="hero">
                         <input type="radio" id="heroRdio" name="characterType" value="Hero">
                         <img id="heroImg" src="images/superhero.png" alt="hero">
                     </label>
                     <label id="villain">
                         <input type="radio" id="villainRdio" name="characterType" value="Villain">
-                        <img id= "villainImg" src="images/villain.png" alt="vilain">                    </label>    
-                    <label id="civilian">    
-                        <input type="radio" id="civilianRdio" name="characterType" value="Civilian">
-                        <img id="civilianImg" src="images/employee.png" alt="ciilian">                    </label>    
-                    </label>
+                        <img id= "villainImg" src="images/villain.png" alt="vilain"></label>    
                     </div>
                 <br>
                 <div class="btnDiv">
