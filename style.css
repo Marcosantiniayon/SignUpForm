@@ -55,9 +55,17 @@ body{
     width: 100%;
 }
 
-p{
+#enter{
     font-family: 'Press Start 2P', cursive;
-    font-size: .6rem;
+    font-size: .6em;
+    text-align: center;
+    margin: 16px;
+    color: rgb(191, 255, 255);
+}
+
+#meta{
+    font-size: 3.6EM; 
+    font-family: 'Lexend Zetta', sans-serif;
     text-align: center;
     margin: 16px;
     color: rgb(191, 255, 255);
@@ -100,6 +108,7 @@ label{
 
 input{
     width: 250px;
+    height: 30px;
     border-radius: 8px;
     text-align: center;
 }
@@ -118,8 +127,8 @@ input{
 }
 
 #hero, #villain, #civilian{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     /* margin: 12px 30px 12px 30px; */
 }
 
@@ -139,7 +148,7 @@ input{
 }
 
 #heroImg, #villainImg, #civilianImg {
-    width: 80px;
+    width: 80%;
     padding: 12px;
 }
 
@@ -172,27 +181,43 @@ textarea:focus, input:focus{
 
 /* MEDIA QUERRIES */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 599px) {
+/* 600-778px */
+@media only screen and (max-width: 778px) {
+    #meta{
+        font-size: 3EM; 
+    }
+    .emailDiv, .passDiv, .confDiv, .charDiv {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    input{
+        width: 280px;
+        height: 40px;
+    }
+}
+
+/* 0-679px */
+@media only screen and (max-width: 679px) {
+    #meta{
+        font-size: 2.2EM; 
+    }
+    .radioDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #hero, #villain, #civilian{
+        width: 150px;
+        height: 150px;
+        /* margin: 12px 30px 12px 30px; */
+    }
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    
-}
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    
-}
