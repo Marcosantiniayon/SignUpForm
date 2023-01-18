@@ -13,7 +13,7 @@ let characterType = "Civilian";
 
 
 //Validation Error Messages
-lAddress.addEventListener("input", function (event){
+emailAddress.addEventListener("input", function (event){
     if (emailAddress.validity.typeMismatch) {
         emailAddressError.textContent = 'Please enter in a valid Email. EX:(johnSmith@email.com)';}
         else{emailAddressError.textContent = '';}
