@@ -42,8 +42,12 @@ password.addEventListener("input", function(event){
 
 confirmPassword.addEventListener("input", function(event){
     if(confirmPassword.value != password.value){
-        confirmPasswordError.textContent = "Password does not match."
-    }else {confirmPasswordError.textContent = ""}
+        confirmPassword.setCustomValidity('Passwords do not match');
+        confirmPasswordError.textContent = "Passwords do not match."
+    }else {
+        confirmPassword.setCustomValidity('');
+        confirmPasswordError.textContent = ""
+    }
 });
 
 civilianRdio.addEventListener("input", function(event){
